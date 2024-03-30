@@ -5,6 +5,14 @@
     {
       "AbsoluteMoniker": "D:0:0:{C608A989-088C-45C1-88D0-A85773D8A678}|Particle-Simulation\\Particle-Simulation.vcxproj|C:\\Projects\\Particle-Simulation\\Particle-Simulation\\src\\mian.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{C608A989-088C-45C1-88D0-A85773D8A678}|Particle-Simulation\\Particle-Simulation.vcxproj|solutionrelative:Particle-Simulation\\src\\mian.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C608A989-088C-45C1-88D0-A85773D8A678}|Particle-Simulation\\Particle-Simulation.vcxproj|C:\\Projects\\Particle-Simulation\\Particle-Simulation\\src\\Screen.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C608A989-088C-45C1-88D0-A85773D8A678}|Particle-Simulation\\Particle-Simulation.vcxproj|solutionrelative:Particle-Simulation\\src\\Screen.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C608A989-088C-45C1-88D0-A85773D8A678}|Particle-Simulation\\Particle-Simulation.vcxproj|C:\\Projects\\Particle-Simulation\\Particle-Simulation\\src\\Screen.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C608A989-088C-45C1-88D0-A85773D8A678}|Particle-Simulation\\Particle-Simulation.vcxproj|solutionrelative:Particle-Simulation\\src\\Screen.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,8 +22,22 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "mian.cpp",
+              "DocumentMoniker": "C:\\Projects\\Particle-Simulation\\Particle-Simulation\\src\\mian.cpp",
+              "RelativeDocumentMoniker": "Particle-Simulation\\src\\mian.cpp",
+              "ToolTip": "C:\\Projects\\Particle-Simulation\\Particle-Simulation\\src\\mian.cpp",
+              "RelativeToolTip": "Particle-Simulation\\src\\mian.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-03-27T21:31:11.541Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{e506b91c-c606-466a-90a9-123d1d1e12b3}"
@@ -26,15 +48,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "mian.cpp",
-              "DocumentMoniker": "C:\\Projects\\Particle-Simulation\\Particle-Simulation\\src\\mian.cpp",
-              "RelativeDocumentMoniker": "Particle-Simulation\\src\\mian.cpp",
-              "ToolTip": "C:\\Projects\\Particle-Simulation\\Particle-Simulation\\src\\mian.cpp",
-              "RelativeToolTip": "Particle-Simulation\\src\\mian.cpp",
-              "ViewState": "AQIAABIAAAAAAAAAAAAAAC0AAAAUAAAA",
+              "DocumentIndex": 2,
+              "Title": "Screen.h",
+              "DocumentMoniker": "C:\\Projects\\Particle-Simulation\\Particle-Simulation\\src\\Screen.h",
+              "RelativeDocumentMoniker": "Particle-Simulation\\src\\Screen.h",
+              "ToolTip": "C:\\Projects\\Particle-Simulation\\Particle-Simulation\\src\\Screen.h",
+              "RelativeToolTip": "Particle-Simulation\\src\\Screen.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-03-30T20:15:57.318Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Screen.cpp",
+              "DocumentMoniker": "C:\\Projects\\Particle-Simulation\\Particle-Simulation\\src\\Screen.cpp",
+              "RelativeDocumentMoniker": "Particle-Simulation\\src\\Screen.cpp",
+              "ToolTip": "C:\\Projects\\Particle-Simulation\\Particle-Simulation\\src\\Screen.cpp",
+              "RelativeToolTip": "Particle-Simulation\\src\\Screen.cpp",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAABAAAAACAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-03-27T21:31:11.541Z",
+              "WhenOpened": "2024-03-30T20:16:23.235Z",
               "EditorCaption": ""
             }
           ]

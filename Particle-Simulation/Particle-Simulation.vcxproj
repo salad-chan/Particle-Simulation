@@ -175,7 +175,11 @@
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\Screen.cpp" />
     <ClCompile Include="src\mian.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\Screen.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
