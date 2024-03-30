@@ -1,5 +1,3 @@
-#include <iostream>
-#include "SDL.h"
 #include "Screen.h"
 
 int main(int argc, char* argv[]) {
@@ -13,8 +11,14 @@ int main(int argc, char* argv[]) {
 	// Main loop
 	while (true) {
 		
-		//h
-
+		for (int i = 0; i < MyParticleSimulation::Screen::SCREEN_HEIGHT; i++) {
+			for (int j = 0; j < MyParticleSimulation::Screen::SCREEN_WIDTH; j++) {
+				screen.setPixelColor(j, i, 0x00, 0xff, 0x00);
+			}
+		}
+		
+		screen.update();
+		
 		if (screen.processEvent() == false) {
 			break;
 		}

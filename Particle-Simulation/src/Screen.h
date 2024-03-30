@@ -8,6 +8,8 @@ namespace MyParticleSimulation {
 	public:
 		Screen();
 		bool init();
+		void update();
+		void setPixelColor(int x, int y, Uint8 red, Uint8 green, Uint8 blue);
 		bool processEvent();
 		void shutdown();
 	

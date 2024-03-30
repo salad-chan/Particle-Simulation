@@ -23,7 +23,7 @@ namespace MyParticleSimulation {
 		}
 
 		// Creation of SLD renderer, last argument prevents screen tearing
-		SDL_Renderer* renderer = SDL_CreateRenderer(window, -1, SDL_RENDERER_PRESENTVSYNC);
+		renderer = SDL_CreateRenderer(window, -1, SDL_RENDERER_PRESENTVSYNC);
 
 		if (renderer == nullptr) {
 			std::cout << "Renderer could not be creater." << std::endl;
@@ -44,14 +44,31 @@ namespace MyParticleSimulation {
 
 		buffer = new Uint32[SCREEN_WIDTH * SCREEN_HEIGHT];
 
-		memset(buffer, 0xffffffff, SCREEN_WIDTH * SCREEN_HEIGHT * sizeof(Uint32));
+		memset(buffer, 0x00000000, SCREEN_WIDTH * SCREEN_HEIGHT * sizeof(Uint32));
 
+		return true;
+	}
+
+	void Screen::update() {
 		SDL_UpdateTexture(texture, nullptr, buffer, SCREEN_WIDTH * sizeof(Uint32));
 		SDL_RenderClear(renderer);
 		SDL_RenderCopy(renderer, texture, nullptr, nullptr);
 		SDL_RenderPresent(renderer);
+	}
 
-		return true;
+	void MyParticleSimulation::Screen::setPixelColor(int x, int y, Uint8 red, Uint8 green, Uint8 blue) {
+		Uint32 color = 0;
+
+		// Channel order is alpha, blue, green, red
+		color += 0xff;
+		color <<= 8;
+		color += blue;
+		color <<= 8;
+		color += green;
+		color <<= 8;
+		color += red;
+
+		buffer[(y * SCREEN_WIDTH) + x] = color;
 	}
 
 	bool Screen::processEvent() {
