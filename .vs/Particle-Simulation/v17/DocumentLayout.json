@@ -3,16 +3,32 @@
   "WorkspaceRootPath": "C:\\Projects\\Particle-Simulation\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C608A989-088C-45C1-88D0-A85773D8A678}|Particle-Simulation\\Particle-Simulation.vcxproj|C:\\Projects\\Particle-Simulation\\Particle-Simulation\\src\\Screen.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{C608A989-088C-45C1-88D0-A85773D8A678}|Particle-Simulation\\Particle-Simulation.vcxproj|solutionrelative:Particle-Simulation\\src\\Screen.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{C608A989-088C-45C1-88D0-A85773D8A678}|Particle-Simulation\\Particle-Simulation.vcxproj|C:\\Projects\\Particle-Simulation\\Particle-Simulation\\src\\mian.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C608A989-088C-45C1-88D0-A85773D8A678}|Particle-Simulation\\Particle-Simulation.vcxproj|solutionrelative:Particle-Simulation\\src\\mian.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C608A989-088C-45C1-88D0-A85773D8A678}|Particle-Simulation\\Particle-Simulation.vcxproj|C:\\Projects\\Particle-Simulation\\Particle-Simulation\\src\\Screen.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{C608A989-088C-45C1-88D0-A85773D8A678}|Particle-Simulation\\Particle-Simulation.vcxproj|solutionrelative:Particle-Simulation\\src\\Screen.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C608A989-088C-45C1-88D0-A85773D8A678}|Particle-Simulation\\Particle-Simulation.vcxproj|C:\\Projects\\Particle-Simulation\\Particle-Simulation\\src\\mian.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{C608A989-088C-45C1-88D0-A85773D8A678}|Particle-Simulation\\Particle-Simulation.vcxproj|solutionrelative:Particle-Simulation\\src\\mian.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{C608A989-088C-45C1-88D0-A85773D8A678}|Particle-Simulation\\Particle-Simulation.vcxproj|C:\\Projects\\Particle-Simulation\\Particle-Simulation\\src\\Screen.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C608A989-088C-45C1-88D0-A85773D8A678}|Particle-Simulation\\Particle-Simulation.vcxproj|solutionrelative:Particle-Simulation\\src\\Screen.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C608A989-088C-45C1-88D0-A85773D8A678}|Particle-Simulation\\Particle-Simulation.vcxproj|C:\\Projects\\Particle-Simulation\\Particle-Simulation\\src\\Particle.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C608A989-088C-45C1-88D0-A85773D8A678}|Particle-Simulation\\Particle-Simulation.vcxproj|solutionrelative:Particle-Simulation\\src\\Particle.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C608A989-088C-45C1-88D0-A85773D8A678}|Particle-Simulation\\Particle-Simulation.vcxproj|C:\\Projects\\Particle-Simulation\\Particle-Simulation\\src\\Swarm.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C608A989-088C-45C1-88D0-A85773D8A678}|Particle-Simulation\\Particle-Simulation.vcxproj|solutionrelative:Particle-Simulation\\src\\Swarm.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C608A989-088C-45C1-88D0-A85773D8A678}|Particle-Simulation\\Particle-Simulation.vcxproj|C:\\Projects\\Particle-Simulation\\Particle-Simulation\\src\\Particle.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C608A989-088C-45C1-88D0-A85773D8A678}|Particle-Simulation\\Particle-Simulation.vcxproj|solutionrelative:Particle-Simulation\\src\\Particle.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C608A989-088C-45C1-88D0-A85773D8A678}|Particle-Simulation\\Particle-Simulation.vcxproj|C:\\Projects\\Particle-Simulation\\Particle-Simulation\\src\\Swarm.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C608A989-088C-45C1-88D0-A85773D8A678}|Particle-Simulation\\Particle-Simulation.vcxproj|solutionrelative:Particle-Simulation\\src\\Swarm.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,17 +38,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "mian.cpp",
               "DocumentMoniker": "C:\\Projects\\Particle-Simulation\\Particle-Simulation\\src\\mian.cpp",
               "RelativeDocumentMoniker": "Particle-Simulation\\src\\mian.cpp",
               "ToolTip": "C:\\Projects\\Particle-Simulation\\Particle-Simulation\\src\\mian.cpp",
               "RelativeToolTip": "Particle-Simulation\\src\\mian.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAATAAAA",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-03-27T21:31:11.541Z",
               "IsPinned": true,
@@ -48,26 +64,78 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Swarm.h",
+              "DocumentMoniker": "C:\\Projects\\Particle-Simulation\\Particle-Simulation\\src\\Swarm.h",
+              "RelativeDocumentMoniker": "Particle-Simulation\\src\\Swarm.h",
+              "ToolTip": "C:\\Projects\\Particle-Simulation\\Particle-Simulation\\src\\Swarm.h",
+              "RelativeToolTip": "Particle-Simulation\\src\\Swarm.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-04-01T22:34:15.585Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Swarm.cpp",
+              "DocumentMoniker": "C:\\Projects\\Particle-Simulation\\Particle-Simulation\\src\\Swarm.cpp",
+              "RelativeDocumentMoniker": "Particle-Simulation\\src\\Swarm.cpp",
+              "ToolTip": "C:\\Projects\\Particle-Simulation\\Particle-Simulation\\src\\Swarm.cpp",
+              "RelativeToolTip": "Particle-Simulation\\src\\Swarm.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-04-01T22:34:47.68Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Particle.h",
+              "DocumentMoniker": "C:\\Projects\\Particle-Simulation\\Particle-Simulation\\src\\Particle.h",
+              "RelativeDocumentMoniker": "Particle-Simulation\\src\\Particle.h",
+              "ToolTip": "C:\\Projects\\Particle-Simulation\\Particle-Simulation\\src\\Particle.h",
+              "RelativeToolTip": "Particle-Simulation\\src\\Particle.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-04-01T22:33:06.802Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Particle.cpp",
+              "DocumentMoniker": "C:\\Projects\\Particle-Simulation\\Particle-Simulation\\src\\Particle.cpp",
+              "RelativeDocumentMoniker": "Particle-Simulation\\src\\Particle.cpp",
+              "ToolTip": "C:\\Projects\\Particle-Simulation\\Particle-Simulation\\src\\Particle.cpp",
+              "RelativeToolTip": "Particle-Simulation\\src\\Particle.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-04-01T22:33:10.385Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Screen.h",
               "DocumentMoniker": "C:\\Projects\\Particle-Simulation\\Particle-Simulation\\src\\Screen.h",
               "RelativeDocumentMoniker": "Particle-Simulation\\src\\Screen.h",
               "ToolTip": "C:\\Projects\\Particle-Simulation\\Particle-Simulation\\src\\Screen.h",
               "RelativeToolTip": "Particle-Simulation\\src\\Screen.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-03-30T20:15:57.318Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Screen.cpp",
               "DocumentMoniker": "C:\\Projects\\Particle-Simulation\\Particle-Simulation\\src\\Screen.cpp",
               "RelativeDocumentMoniker": "Particle-Simulation\\src\\Screen.cpp",
               "ToolTip": "C:\\Projects\\Particle-Simulation\\Particle-Simulation\\src\\Screen.cpp",
               "RelativeToolTip": "Particle-Simulation\\src\\Screen.cpp",
-              "ViewState": "AQIAABIAAAAAAAAAAAAAADoAAAAxAAAA",
+              "ViewState": "AQIAACEAAAAAAAAAAAAAADwAAAAKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-03-30T20:16:23.235Z",
               "EditorCaption": ""
