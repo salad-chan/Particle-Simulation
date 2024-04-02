@@ -56,8 +56,12 @@ namespace MyParticleSimulation {
 		SDL_RenderPresent(renderer);
 	}
 
+	void Screen::clear() {
+		memset(buffer, 0x00000000, SCREEN_WIDTH * SCREEN_HEIGHT * sizeof(Uint32));
+	}
+
 	void MyParticleSimulation::Screen::setPixelColor(int x, int y, Uint8 red, Uint8 green, Uint8 blue) {
-		if (x < 0 || x > SCREEN_WIDTH || y < 0 || y > SCREEN_HEIGHT)
+		if (x < 0 || x >= SCREEN_WIDTH || y < 0 || y >= SCREEN_HEIGHT)
 			return;
 		
 		Uint32 color = 0;

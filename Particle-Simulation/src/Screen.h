@@ -13,6 +13,7 @@ namespace MyParticleSimulation {
 		void setPixelColor(int x, int y, Uint8 red, Uint8 green, Uint8 blue);
 		bool processEvent();
 		void shutdown();
+		void clear();
 	
 	public:
 		const static int SCREEN_WIDTH = 800;

@@ -2,8 +2,6 @@
 #include <stdlib.h>
 #include "Swarm.h"
 
-const static int N_PARTICLES = 5000;
-
 int main(int argc, char* argv[]) {
 
 	std::srand(time(nullptr));
@@ -14,7 +12,7 @@ int main(int argc, char* argv[]) {
 		std::cout << "Error in SDL initialization" << std::endl;
 	}
 
-	MyParticleSimulation::Swarm swarm(N_PARTICLES);
+	MyParticleSimulation::Swarm swarm;
 
 	const MyParticleSimulation::Particle* const pParticles = swarm.getParticles();
 
@@ -23,11 +21,14 @@ int main(int argc, char* argv[]) {
 
 		int elapsed = SDL_GetTicks64();
 
+		screen.clear();
+		swarm.update();
+
 		Uint8 red = (1 + sin(elapsed * 0.0005)) * 128;
 		Uint8 green = (1 + sin(elapsed * 0.0002)) * 128;
 		Uint8 blue = (1 + sin(elapsed * 0.0001)) * 128;
 
-		for (int i = 0; i < N_PARTICLES; i++) {
+		for (int i = 0; i < MyParticleSimulation::Swarm::N_PARTICLES; i++) {
 			MyParticleSimulation::Particle particle = pParticles[i];
 
 			int x = (particle.x + 1) * (screen.SCREEN_WIDTH / 2);

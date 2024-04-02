@@ -2,11 +2,17 @@
 
 namespace MyParticleSimulation {
 	
-	MyParticleSimulation::Swarm::Swarm(int n_particles) {
-		Particles = new Particle[n_particles];
+	Swarm::Swarm() {
+		Particles = new Particle[N_PARTICLES];
 	}
 
-	MyParticleSimulation::Swarm::~Swarm() {
+	Swarm::~Swarm() {
 		delete[] Particles;
+	}
+
+	void Swarm::update() {
+		for (int i = 0; i < N_PARTICLES; i++) {
+			Particles[i].update();
+		}
 	}
 }

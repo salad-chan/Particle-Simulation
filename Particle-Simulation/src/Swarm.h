@@ -6,10 +6,14 @@ namespace MyParticleSimulation {
 	
 	class Swarm {
 	public:
-		Swarm(int n_particles);
+		Swarm();
 		~Swarm();
 		const Particle* const getParticles() { return Particles; };
+		void update();
 	
+	public:
+		const static int N_PARTICLES = 1000;
+
 	private:
 		Particle* Particles;
 	};
