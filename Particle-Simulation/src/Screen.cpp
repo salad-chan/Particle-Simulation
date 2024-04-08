@@ -2,7 +2,7 @@
 
 namespace MyParticleSimulation {
 	Screen::Screen() : 
-		window(nullptr), renderer(nullptr), texture(nullptr), buffer(nullptr) {
+		window(nullptr), renderer(nullptr), texture(nullptr), buffer(nullptr), buffer2(nullptr) {
 		
 	}
 
@@ -32,7 +32,7 @@ namespace MyParticleSimulation {
 			return false;
 		}
 
-		texture = SDL_CreateTexture(renderer, SDL_PIXELFORMAT_ABGR8888, SDL_TEXTUREACCESS_STATIC, SCREEN_WIDTH, SCREEN_HEIGHT);
+		texture = SDL_CreateTexture(renderer, SDL_PIXELFORMAT_RGBA8888, SDL_TEXTUREACCESS_STATIC, SCREEN_WIDTH, SCREEN_HEIGHT);
 
 		if (texture == nullptr) {
 			std::cout << "Texture could not be creater." << std::endl;
@@ -43,8 +43,12 @@ namespace MyParticleSimulation {
 		}
 
 		buffer = new Uint32[SCREEN_WIDTH * SCREEN_HEIGHT];
+		
+		buffer2 = new Uint32[SCREEN_WIDTH * SCREEN_HEIGHT];
 
-		memset(buffer, 0x00000000, SCREEN_WIDTH * SCREEN_HEIGHT * sizeof(Uint32));
+		memset(buffer, 0, SCREEN_WIDTH * SCREEN_HEIGHT * sizeof(Uint32));
+		
+		memset(buffer2, 0, SCREEN_WIDTH * SCREEN_HEIGHT * sizeof(Uint32));
 
 		return true;
 	}
@@ -56,26 +60,62 @@ namespace MyParticleSimulation {
 		SDL_RenderPresent(renderer);
 	}
 
-	void Screen::clear() {
-		memset(buffer, 0x00000000, SCREEN_WIDTH * SCREEN_HEIGHT * sizeof(Uint32));
-	}
-
-	void MyParticleSimulation::Screen::setPixelColor(int x, int y, Uint8 red, Uint8 green, Uint8 blue) {
+	void Screen::setPixelColor(int x, int y, Uint8 red, Uint8 green, Uint8 blue) {
 		if (x < 0 || x >= SCREEN_WIDTH || y < 0 || y >= SCREEN_HEIGHT)
 			return;
 		
 		Uint32 color = 0;
 
 		// Channel order is alpha, blue, green, red
-		color += 0xff;
-		color <<= 8;
-		color += blue;
+		color += red;
 		color <<= 8;
 		color += green;
 		color <<= 8;
-		color += red;
+		color += blue;
+		color <<= 8;
+		color += 0xff;
 
 		buffer[(y * SCREEN_WIDTH) + x] = color;
+	}
+
+	void Screen::boxBlur() {
+		Uint32* temp = buffer;
+		buffer = buffer2;
+		buffer2 = temp;
+
+		for (int y = 0; y < SCREEN_HEIGHT; y++) {
+			for (int x = 0; x < SCREEN_WIDTH; x++) {
+
+				int redTotal = 0;
+				int greenTotal = 0;
+				int blueTotal = 0;
+
+				for (int row = -1; row <= 1; row++) {
+					for (int col = -1; col <= 1; col++) {
+						int currentX = x + col;
+						int currentY = y + col;
+
+						if (currentX >= 0 && currentX < SCREEN_WIDTH && currentY >= 0 && currentY < SCREEN_HEIGHT) {
+							Uint32 color = buffer2[currentY * SCREEN_WIDTH + currentX];
+
+							Uint8 red = color >> 24;
+							Uint8 green = color >> 16;
+							Uint8 blue = color >> 8;
+
+							redTotal += red;
+							greenTotal += green;
+							blueTotal += blue;
+						}
+					}
+				}
+
+				Uint8 red = redTotal / 9;
+				Uint8 green = greenTotal / 9;
+				Uint8 blue = blueTotal / 9;
+
+				setPixelColor(x, y, red, green, blue);
+			}
+		}
 	}
 
 	bool Screen::processEvent() {
@@ -90,6 +130,7 @@ namespace MyParticleSimulation {
 	void Screen::shutdown() {
 		// Free memory
 		delete[] buffer;
+		delete[] buffer2;
 
 		// Cleanup after SDL
 		SDL_DestroyTexture(texture);
