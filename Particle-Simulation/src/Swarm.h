@@ -9,12 +9,13 @@ namespace MyParticleSimulation {
 		Swarm();
 		~Swarm();
 		const Particle* const getParticles() { return Particles; };
-		void update();
+		void update(int elapsed);
 	
 	public:
-		const static int N_PARTICLES = 1000;
+		const static int N_PARTICLES = 5000;
 
 	private:
 		Particle* Particles;
+		int lastTime;
 	};
 }

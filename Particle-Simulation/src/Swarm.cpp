@@ -2,7 +2,7 @@
 
 namespace MyParticleSimulation {
 	
-	Swarm::Swarm() {
+	Swarm::Swarm() : lastTime(0) {
 		Particles = new Particle[N_PARTICLES];
 	}
 
@@ -10,9 +10,13 @@ namespace MyParticleSimulation {
 		delete[] Particles;
 	}
 
-	void Swarm::update() {
+	void Swarm::update(int elapsed) {
+		int interval = elapsed - lastTime;
+		
 		for (int i = 0; i < N_PARTICLES; i++) {
-			Particles[i].update();
+			Particles[i].update(interval);
 		}
+
+		lastTime = elapsed;
 	}
 }

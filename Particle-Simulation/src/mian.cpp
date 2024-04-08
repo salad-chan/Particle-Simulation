@@ -22,7 +22,7 @@ int main(int argc, char* argv[]) {
 		int elapsed = SDL_GetTicks64();
 
 		screen.clear();
-		swarm.update();
+		swarm.update(elapsed);
 
 		Uint8 red = (1 + sin(elapsed * 0.0005)) * 128;
 		Uint8 green = (1 + sin(elapsed * 0.0002)) * 128;
@@ -32,7 +32,7 @@ int main(int argc, char* argv[]) {
 			MyParticleSimulation::Particle particle = pParticles[i];
 
 			int x = (particle.x + 1) * (screen.SCREEN_WIDTH / 2);
-			int y = (particle.y + 1) * (screen.SCREEN_HEIGHT / 2);
+			int y = particle.y * (screen.SCREEN_WIDTH / 2) + MyParticleSimulation::Screen::SCREEN_HEIGHT/2;
 
 			screen.setPixelColor(x, y, red, green, blue);
 		}

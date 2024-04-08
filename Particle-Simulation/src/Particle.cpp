@@ -1,28 +1,20 @@
 #include "Particle.h"
 #include <stdlib.h>
+#include <math.h>
+#include <numbers>
 
 namespace MyParticleSimulation {
 	
-	Particle::Particle() {
-		x = 2.0 * rand() / RAND_MAX - 1;
-		y = 2.0 * rand() / RAND_MAX - 1;
-
-		speed = 0.005;
-
-		x_speed = speed * (2.0 * rand() / RAND_MAX - 1);
-		y_speed = speed * (2.0 * rand() / RAND_MAX - 1);
+	Particle::Particle() : x(0), y(0) {
+		direction = (2 * std::numbers::pi * rand()) / RAND_MAX;
+		speed = (0.0001 * rand()) / RAND_MAX;
 	}
 
-	void Particle::update() {
-		x += x_speed;
-		y += y_speed;
+	void Particle::update(int interval) {
+		double x_speed = speed * cos(direction);
+		double y_speed = speed * sin(direction);
 
-		if (x <= -1.0 || x >= 1.0) {
-			x_speed = -x_speed;
-		}
-
-		if (y <= -1.0 || y >= 1.0) {
-			y_speed = -y_speed;
-		}
+		x += x_speed * interval;
+		y += y_speed * interval;
 	}
 }

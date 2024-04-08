@@ -5,12 +5,11 @@ namespace MyParticleSimulation {
 	class Particle {
 	public:
 		Particle();
-		void update();
+		void update(int interval);
 
 	public:
 		double x, y;
 		double speed;
-		double x_speed;
-		double y_speed;
+		double direction;
 	};
 }
